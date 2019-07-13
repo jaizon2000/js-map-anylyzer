@@ -121,7 +121,7 @@ function level11Solution() {
 
 function level12Solution() {
 	// USE BINARY IF STATEMENT
-	if (column <= 5 && row <= 4) {
+	if ((column <= 5 && row <= 4) || (column >= 6 && row >= 5)) {
 		currentTile.innerHTML = 'Water';
 	} else {
 		currentTile.innerHTML = 'Sand';
@@ -131,12 +131,22 @@ function level12Solution() {
 
 function level13Solution() {
 	// USE BINARY IF STATEMENT
-
+	if (column >= 4 && row >= 2 && column <= 9 && row <= 5) {
+		currentTile.innerHTML = 'Sand';
+	} else {
+		currentTile.innerHTML = 'Tree';
+	}
 
 }
 
 function level14Solution() {
 	// USE CHAINED IF STATEMENT
-
+	if (column >= 2 && column <= 4 && row >= 1 && row <= 5) {
+		currentTile.innerHTML = 'Tree';
+	} else if (row >= 3 && row <= 5 && column >= 7 && column <= 10) {
+		currentTile.innerHTML = 'Water';
+	} else {
+		currentTile.innerHTML = 'Sand';
+	}
 
 }
